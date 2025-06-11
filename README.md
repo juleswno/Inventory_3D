@@ -78,17 +78,17 @@ Unity 기반 텍스트 RPG에서 실제로 사용되는 인벤토리 시스템�
 ## 폴더 구조 (일부)
 
 Assets/
-├── Scripts/
-│ ├── Character.cs
-│ ├── Item.cs
-│ ├── GameManager.cs
-│ └── UI/
-│ ├── UIManager.cs
-│ ├── UIMainMenu.cs
-│ ├── UIStatus.cs
-│ ├── UIInventory.cs
-│ └── UISlot.cs
-├── Prefabs/
-│ └── UISlot.prefab
-├── Scenes/
-│ └── MainScene.unity
+    ├── Scripts/
+    │ ├── Character.cs
+    │ ├── Item.cs
+    │ ├── GameManager.cs
+    │ └── UI/
+    │ ├── UIManager.cs
+    │ ├── UIMainMenu.cs
+    │ ├── UIStatus.cs
+    │ ├── UIInventory.cs
+    │ └── UISlot.cs
+    ├── Prefabs/
+    │ └── UISlot.prefab
+    ├── Scenes/
+    │ └── MainScene.unity
