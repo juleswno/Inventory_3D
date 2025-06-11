@@ -77,7 +77,7 @@ Unity 기반 텍스트 RPG에서 실제로 사용되는 인벤토리 시스템�
 
 ## 폴더 구조 (일부)
 
-Assets/
+```Assets/
 ├── Scripts/
 │   ├── Character.cs
 │   ├── Item.cs
@@ -91,4 +91,4 @@ Assets/
 ├── Prefabs/
 │   └── UISlot.prefab
 ├── Scenes/
-│   └── MainScene.unity
+│   └── MainScene.unity```
