@@ -91,4 +91,4 @@ Unity 기반 텍스트 RPG에서 실제로 사용되는 인벤토리 시스템�
 ├── Prefabs/
 │   └── UISlot.prefab
 ├── Scenes/
-│   └── MainScene.unity```
+│   └── MainScene.unity
