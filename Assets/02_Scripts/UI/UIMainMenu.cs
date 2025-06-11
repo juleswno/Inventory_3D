@@ -10,7 +10,7 @@ public class UIMainMenu : MonoBehaviour
     [SerializeField] private TMP_Text textLevel;
     [SerializeField] private TMP_Text textGold;
 
-    // 경험치 
+    // 경험치 바
     [SerializeField] private Slider sliderExpBar;
     [SerializeField] private TMP_Text textExpValue;
 

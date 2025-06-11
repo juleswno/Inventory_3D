@@ -13,8 +13,7 @@ public class Character
     public int Critical { get; private set; }
     public int Gold { get; private set; }
 
-    // 인벤토리 아이템 리스트
-    public List<Item> Inventory { get; private set; }
+    public List<Item> Inventory { get; private set; }  // 인벤토리 아이템 목록
 
     public Character(string name, string title, int level, int exp, int attack, int defense, int hp, int critical, int gold)
     {
@@ -28,12 +27,30 @@ public class Character
         Critical = critical;
         Gold = gold;
 
-        // 테스트용 아이템 초기화
+        // 아이템 초기화
         Inventory = new List<Item>
         {
-            new Item("빛나는 검", "오래된 검"),
+            new Item("빛나는 검", "오래된 검", true),
             new Item("무명 원단", "가벼운 외투"),
             new Item("고양이 인형", "봉인된 추억")
         };
+    }
+
+    // 아이템 추가
+    public void AddItem(Item item)
+    {
+        Inventory.Add(item);
+    }
+
+    // 장착
+    public void EquipItem(Item item)
+    {
+        item.Equip();
+    }
+
+    // 해제
+    public void UnEquipItem(Item item)
+    {
+        item.UnEquip();
     }
 }

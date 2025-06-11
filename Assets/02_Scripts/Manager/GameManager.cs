@@ -8,19 +8,41 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        // 싱글톤 설정
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-
-        SetData(); // 초기 캐릭터 데이터 세팅
+        // 싱글톤 패턴
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // 씬 전환에도 유지
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
+    private void Start()
+    {
+        SetData();
+    }
+
+    /// <summary>
+    /// 플레이어 및 게임 초기 데이터 설정
+    /// </summary>
     private void SetData()
     {
-        // 테스트용 캐릭터 
-        Player = new Character("Jules", "QUEEN", 27, 45, 14, 8, 9, 7, 20000);
+        Player = new Character(
+            name: "Jules",
+            title: "QUEEN",
+            level: 27,
+            exp: 45,
+            attack: 14,
+            defense: 8,
+            hp: 9,
+            critical: 7,
+            gold: 20000
+        );
 
-        // UI에 캐릭터 정보 전달
+        // UI에 데이터 전달
         UIManager.Instance.UIMainMenu.SetCharacter(Player);
         UIManager.Instance.UIStatus.SetCharacter(Player);
     }
