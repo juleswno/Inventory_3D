@@ -9,7 +9,7 @@ Unity 기반 텍스트 RPG에서 실제로 사용되는 인벤토리 시스템�
 
 - **Unity 버전**: 2021.3 LTS 이상 권장  
 - **언어**: C#
-- **에디터**: Visual Studio / Rider
+- **에디터**: Rider
 
 ---
 
