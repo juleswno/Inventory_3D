@@ -24,5 +24,17 @@ public class Character
         HP = hp;
         Critical = critical;
         Gold = gold;
+        
+        // 기존 필드 초기화...
+
+        Inventory = new List<Item>
+        {
+            new Item("빛나는 검", "오래된 검"),
+            new Item("무명 원단", "가벼운 외투"),
+            new Item("고양이 인형", "봉인된 추억")
+        };
+        
     }
+    
+    
 }
